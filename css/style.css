@@ -1,0 +1,58 @@
+/* Custom styles for GlowBeauty website */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
+}
+
+.btn-primary {
+    background-color: #FF69B4;
+    border-color: #FF69B4;
+}
+
+.btn-primary:hover {
+    background-color: #FF1493;
+    border-color: #FF1493;
+}
+
+footer {
+    margin-top: auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
