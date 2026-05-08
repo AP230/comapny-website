@@ -39,12 +39,26 @@ body {
     border-color: #FF1493;
 }
 
-footer {
-    margin-top: auto;
+.wishlist-btn.active {
+    background-color: #ffe6f0;
+    border-color: #dc3545;
 }
 
-section {
-    padding: 60px 0;
+.wishlist-btn.active i {
+    color: #dc3545;
+}
+
+.cart-item, .wishlist-item {
+    transition: all 0.3s ease;
+}
+
+.cart-item:hover, .wishlist-item:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+}
+
+.toast-container {
+    z-index: 1060;
 }
 
 @media (max-width: 768px) {
@@ -54,5 +68,10 @@ section {
     
     .hero p {
         font-size: 1.1rem;
+    }
+    
+    .d-flex.ms-3 {
+        margin-left: 0 !important;
+        margin-top: 10px;
     }
 }
